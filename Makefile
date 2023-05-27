@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-std=c99 -D_GNU_SOURCE -Wall -Werror -Wextra -O3 -fno-strict-aliasing
+CFLAGS=-std=c99 -D_GNU_SOURCE -Wall -Werror -Wextra -O3 -fno-strict-aliasing -Wno-address-of-packed-member
 IFLAGS=-I./third_party
 LFLAGS=./third_party/c_hashmap/libhashmap.a -lpthread -lm
 PFLAGS=-DLazy #-DPrefix -DBStar
